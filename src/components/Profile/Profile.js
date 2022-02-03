@@ -1,14 +1,23 @@
 import React from "react";
+// import PropTypes from 'prop-types';
 
-function Profile(props) {
-  return <Profile />
+
+
+function Profile({children: { userStats, description }}) {
+  return (
+    <div class="profile">
+      {description}
+      {userStats}
+    </div>
+  )
 }
 
-Profile.propsType = {
-  username: propsType.string,
-  tag: propsType.string,
-  location: propsType.string,
-  avatar: propsType.string,
-  stats: propsType.string,
-}
+// Profile.propTypes ={ 
+//   username: PropTypes.string,
+//    tag: PropTypes.string, 
+//    location: PropTypes.string, 
+//    avatar: PropTypes.string, 
+//    stats: PropTypes.string,
+// }
+
 export default Profile
