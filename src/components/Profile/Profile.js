@@ -3,21 +3,13 @@ import React from "react";
 
 
 
-function Profile({children: { userStats, description }}) {
+function Profile({ children: { userStats, description } }) {
   return (
-    <div class="profile">
+    <div className="profile">
       {description}
       {userStats}
     </div>
   )
 }
-
-// Profile.propTypes ={ 
-//   username: PropTypes.string,
-//    tag: PropTypes.string, 
-//    location: PropTypes.string, 
-//    avatar: PropTypes.string, 
-//    stats: PropTypes.string,
-// }
 
 export default Profile
