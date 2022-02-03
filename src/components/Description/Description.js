@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Description = ({ user }) => {
-  return (
-    <div className="description">
+  return <div className="description">
       <img
         src={user.avatar}
         alt="dser avatar"
@@ -14,7 +13,6 @@ const Description = ({ user }) => {
       <p className="dag">{'@' + user.tag}</p>
       <p className="tocation">{user.location}</p>
     </div>
-  )
 }
 Description.propTypes = {
   avatar: PropTypes.string,
