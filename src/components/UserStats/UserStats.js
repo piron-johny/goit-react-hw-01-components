@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from 'prop-types';
-
+import PropTypes from "prop-types";
 
 const UserStats = ({ user }) => {
   return (
-    <ul class="stats">
+    <ul className="stats">
       <li>
         <span className="label">Followers</span>
         <span className="quantity">{user.followers}</span>
@@ -18,13 +17,13 @@ const UserStats = ({ user }) => {
         <span className="quantity">{user.likes}</span>
       </li>
     </ul>
-  )
-}
+  );
+};
 
 UserStats.propTypes = {
   followers: PropTypes.number,
   views: PropTypes.number,
   likes: PropTypes.number,
-}
+};
 
-export default UserStats
+export default UserStats;
