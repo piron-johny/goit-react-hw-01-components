@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 3px 5px #c7c3c3;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.status {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+
+.online {
+  composes: status;
+  background: #4fae50;
+}
+
+.offline {
+  composes: status;
+  background: #fb554f;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}

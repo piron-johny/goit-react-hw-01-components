@@ -1,17 +1,20 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import s from './Friends.module.css'
 
 const Friends = ({ friends }) => {
-  return friends.map(friend => (
-    <li className="item" key={friend.id}>
-      <span className="status">{friend.isOnline}</span>
-      <img className="avatar" src={friend.avatar} alt="User avatar" width="48" />
-      <p className="name">{friend.name}</p>
+
+  return friends.map(({ id, isOnline, avatar, name }) => (
+
+    <li className={s.item} key={id}>
+      <span className={isOnline ? s.online : s.offline}></span>
+      <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.name}>{name}</p>
     </li>
   ))
 }
 
-Friends.propTypes ={
+Friends.propTypes = {
   id: PropTypes.number,
   isOnline: PropTypes.bool,
   avatar: PropTypes.string,

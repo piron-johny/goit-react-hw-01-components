@@ -1,7 +1,8 @@
 import React from "react";
+import s from './FriendList.module.css'
 
 const FriendList = ({ children: { friends } }) => {
-  return <ul className="friend-list">
+  return <ul className={s.list}>
     {friends}
   </ul>
 

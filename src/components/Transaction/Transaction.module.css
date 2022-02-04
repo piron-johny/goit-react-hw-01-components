@@ -1,0 +1,10 @@
+.line td {
+  text-align: center;
+  padding: 7px;
+  color: #a4a9b1;
+  text-transform: capitalize;
+}
+
+.line:nth-child(2n) {
+  background: #ecf1f3;
+}

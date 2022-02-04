@@ -1,0 +1,14 @@
+.table {
+  margin-bottom: 100px;
+}
+
+thead {
+  background: #00bcd5;
+}
+
+thead tr th {
+  padding: 7px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}

@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from './Transaction.module.css';
+;
+
 
 const Transaction = ({ transactions }) => {
   return transactions.map(({ id, type, amount, currency }) => (
-    <tr key={id}>
+    <tr className={s.line} key={id}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
