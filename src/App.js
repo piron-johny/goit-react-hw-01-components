@@ -23,7 +23,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Profile>
         {{
           userStats: <UserStats user={user.stats} />,
@@ -45,7 +45,7 @@ function App() {
           transaction: <Transaction transactions={transactions} />,
         }}
       </TransactionHistory>
-    </>
+    </div>
   );
 }
 

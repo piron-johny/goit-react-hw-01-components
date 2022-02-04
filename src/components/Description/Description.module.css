@@ -1,0 +1,29 @@
+.description {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.description > :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.dag {
+  color: #9ca7b2;
+}
+
+.tocation {
+  color: #9ca7b2;
+}

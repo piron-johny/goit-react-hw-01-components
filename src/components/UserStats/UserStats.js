@@ -1,20 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from './UserStats.module.css'
 
 const UserStats = ({ user }) => {
   return (
-    <ul className="stats">
+    <ul className={s.stats}>
       <li>
-        <span className="label">Followers</span>
-        <span className="quantity">{user.followers}</span>
+        <span className={s.label}>Followers</span>
+        <span className={s.quantity}>{user.followers}</span>
       </li>
       <li>
-        <span className="label">Views</span>
-        <span className="quantity">{user.views}</span>
+        <span className={s.label}>Views</span>
+        <span className={s.quantity}>{user.views}</span>
       </li>
       <li>
-        <span className="label">Likes</span>
-        <span className="quantity">{user.likes}</span>
+        <span className={s.label}>Likes</span>
+        <span className={s.quantity}>{user.likes}</span>
       </li>
     </ul>
   );
