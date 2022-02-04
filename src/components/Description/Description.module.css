@@ -1,6 +1,6 @@
 .description {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .description > :not(:last-child) {
   margin-bottom: 10px;

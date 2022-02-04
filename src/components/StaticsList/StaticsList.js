@@ -1,18 +1,14 @@
 import React from "react";
 import PropTypes from 'prop-types';
-
-
+import s from './StaticsList.module.css';
 
 const StaticsList = ({ data }) => {
-  return data.map(dataItem => (
-    <ul className="stat-list" key={dataItem.id}>
-      <li className="item">
-        <span className="label">{dataItem.label}</span>
-        <span className="percentage">{dataItem.percentage}</span>
-      </li>
-    </ul>
+  return data.map(({ id, label, percentage }, ind) => (
+    <li className={s.item} key={id} style={{ backgroundColor: `rgb(${ind * 30}, ${ind + 150}, ${ind * 100}, 80%)` }}>
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage}%</span>
+    </li>
   ))
-
 }
 
 StaticsList.propTypes = {

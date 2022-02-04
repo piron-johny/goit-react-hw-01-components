@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  align-items: center;
+  box-shadow: 0px 0px 0px 1px #6a6a6a;
+  border-radius: 4px;
+}
+
+.percentage,
+.label {
+  padding: 8px;
+}
+
+.percentage {
+  font-size: 20px;
+}
